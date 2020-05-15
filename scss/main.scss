@@ -48,6 +48,18 @@ body{
     &__desc{
         font-weight: 300;
         max-width: 750px;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            top:-20%;
+            left:10%;
+            background-image: url('../images/pattern-quotes.svg');
+            background-repeat: no-repeat;
+            background-size: 6rem;
+            width: 100%;
+            height: 100%;
+        }
     }
     &__details{
         margin-top: 1rem;
@@ -154,6 +166,14 @@ body{
         &__imgs{
             order: 1;
             margin: 1rem;
+        }
+        &__desc{
+            &:after{
+                left:50%;
+                top:-12%;
+                transform: translateX(-10%);
+                background-size: 4rem;
+            }
         }
         &__details{
             margin: 0;

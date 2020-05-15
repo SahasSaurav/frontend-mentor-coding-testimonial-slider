@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slider</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container flex col">
+        <div class="card flex row" id="card-tanya">
+            <div class="card__info flex col">
+                <p class="card__desc" id="desc-tanya">
+                    “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”
+                </p>
+                <p class="card__details flex row">
+                    <span class="card__details__name" id="name-tanya">Tanya Sinclair</span>
+                    <span class="card__details__position" id="pos-tanya">UX Engineer</span>
+                </p>
+            </div>
+            <div class="card__imgs flex col">
+               <div class="card__img">
+                    <img  src="images/image-tanya.jpg"  id="img-tanya" alt="People/Tanya">
+               </div>
+                <div class="card__btns flex">
+                    <button class="card__btn card__btn--prev" aria-label="previous button">
+                        <img src="images/icon-prev.svg" alt="">
+                    </button>
+                    <button class=" card__btn card__btn--next" aria-label="next button">
+                        <img src="images/icon-next.svg" alt="">
+                    </button>
+                </div>
+            </div> 
+        </div>
+        <div class="card flex row" id="card-john">
+            <div class="card__info flex col">
+                <p class="card__desc" id="desc-john">
+                    “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
+                </p>
+                <p class="card__details flex row">
+                    <span class="card__details__name" id="name-john">John Tarkpor</span>
+                    <span class="card__details__position" id="pos-john">Junior Front-end Developer</span>
+                </p>
+            </div>
+            <div class="card__imgs flex col">
+               <div class="card__img">
+                    <img src="images/image-john.jpg" id="img-john" alt="People/John">
+               </div>
+                <div class="card__btns flex">
+                    <button class="card__btn card__btn--prev" aria-label="previous button">
+                        <img src="images/icon-prev.svg" alt="">
+                    </button>
+                    <button class=" card__btn card__btn--next" aria-label="next button">
+                        <img src="images/icon-next.svg" alt="">
+                    </button>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="script/script.js" defer></script>
+</body>
+</html>

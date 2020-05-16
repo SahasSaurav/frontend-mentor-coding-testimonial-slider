@@ -44,6 +44,9 @@ body{
         align-items: flex-start;
         background-color: transparent;
         transform: translateX(25%);
+        animation-name: move;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
     }
     &__desc{
         font-weight: 300;
@@ -97,6 +100,9 @@ body{
             width: 100%;
             height: 100%;
             object-fit: contain;
+            animation-name: popup;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
         }
     }
     &__btns{
@@ -124,6 +130,30 @@ body{
         box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 2rem;
+    }
+}
+
+
+@keyframes popup{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes move{
+    0%{
+        transform:translateX(-110vw);
+    }
+    60%{
+        transform:translateX(30vw);
+    }
+    100%{
+        transform:translateX(25%);
     }
 }
 
